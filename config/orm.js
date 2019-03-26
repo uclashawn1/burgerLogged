@@ -3,7 +3,7 @@ var connection = require("./bconnections.js");
 function printQuestionMarks(num) {
   var arr = [];
 
-  for (let i = 0; i < num; i++) {
+  for (var i = 0; i < num; i++) {
     arr.push("?");
   }
 
