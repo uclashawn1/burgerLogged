@@ -1,15 +1,15 @@
-var mysql = require("mysql");
+var mysql = require('mysql');
 
 var connection;
 
 if (process.env.JAWSDB_URL) {
 	connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-    connection = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "ucLAshawn",
-	database: "burgers_db"
+  connection = mysql.createConnection({
+	host: "tkck4yllxdrw0bhi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+	user: "hln0mbbzsodg8i2o",
+	password: "min3pronffgomte0",
+	database: "y91o4iqrpsw00u6h"
 });
 };
 
@@ -18,7 +18,7 @@ connection.connect(function(err) {
     console.error("error connecting: " + err.stack);
     return;
   }
-  console.log("Connected as ID " + connection.threadId);
+  console.log("Connection Successful & Connected as ID " + connection.threadId);
 });
 
 
