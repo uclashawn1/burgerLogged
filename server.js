@@ -6,7 +6,6 @@ var methodOverride = require("method-override");
 
 var app = express();
 
-var db = require("./models");
 
 var express = require("express");
 
