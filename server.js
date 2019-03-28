@@ -1,13 +1,8 @@
-var https = require('https');
 var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 
-
 var app = express();
-
-
-var express = require("express");
 
 app.use(express.static("public"));
 
@@ -21,8 +16,6 @@ app.set("view engine", "handlebars");
 
 var routes = require("./controllers/burger_controller.js");
 app.use("/", routes);
-
-
 var port = process.env.PORT || 3306;
 
 // db.sequelize.sync().then(function() {
@@ -30,6 +23,3 @@ var port = process.env.PORT || 3306;
 //         console.log("Listening on PORT " + port);
 //     });
 // });
-
-app.listen(port);
-console.log("Listening on PORT " + port);
