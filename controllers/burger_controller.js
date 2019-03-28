@@ -5,33 +5,33 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 router.get("/", function(req, res) {
-    res.redirect("/burgers");
+    res.redirect("/burger");
 });
 
-router.get("/burgers", function(req, res) {
+router.get("/burger", function(req, res) {
     burger.all(function(data) {
         var handlebarsObject = {
-        burgers: data
+        burger: data
     };
     console.log(handlebarsObject);
     res.render("index", handlebarsObject);
     });
 });
 
-router.post("/burgers", function(req, res) {
+router.post("/burger", function(req, res) {
     burger.create(
         ["burger_name"], [req.body.burger_name], function() {
-            res.redirect("/burgers");
+            res.redirect("/burger");
         });
 });
 
-router.put("/burgers/:id", function(req, res) {
+router.put("/burger/:id", function(req, res) {
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
 
     burger.update(
     {"devoured": req.body.devoured}, condition, function(data) {
-            res.redirect("/burgers");
+            res.redirect("/burger");
     });
 });
 
