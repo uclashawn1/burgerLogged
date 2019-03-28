@@ -4,8 +4,9 @@
   "description": "burger logger",
   "main": "server.js",
   "scripts": {
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "web": "node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
