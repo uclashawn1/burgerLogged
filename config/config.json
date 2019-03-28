@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "ucLAshawn",
-    "database": "database_development",
+    "database": "burgers_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "ucLAshawn",
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "hln0mbbzsodg8i2o",
+    "password": "min3pronffgomte0",
+    "database": "y91o4iqrpsw00u6h",
+    "host": "tkck4yllxdrw0bhi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "use_env_variable" : "JAWSDB_URL",
     "dialect": "mysql"    
   }
